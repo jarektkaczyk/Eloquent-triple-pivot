@@ -6,6 +6,12 @@ Laravel/Eloquent triple model many-to-many relation
 Working example of Eloquent Relation for many-to-many between 3 models/tables.
 
 Usage
+
+1. 3 models: User, Tag, Track
+2. Add use statement in the trait accordingly
+3. add use trait to the models
+4. define the relations as tripleBelongsToMany
+
 ---
 
 	tables
@@ -15,10 +21,30 @@ Usage
 	tracks: id, ..
 	tag_track_user: id, tag_id, track_id, user_id, ..
 
+	
+	// -------------------------------------
+	// 2 add use statement to the trait
+	
+	use WhateverNamespace\TripleBelongsToMany;
+	
+	trait TriplePivotModelTrait {
+	  ...
+	}
+	
+	
+	// -------------------------------------
+	// 3 use and implement the trait
+	
+	use WhateverNamespace\TriplePivotModelTrait;
 
 	class User extends Eloquent {
+	  
+	  // each of the models must use this trait
+	  use TriplePivotModelTrait;
 	
-		use TriplePivotModelTrait;
+	
+	  // -------------------------------------
+	  // 4  Relation definition
 	
 	  public function tags()
 		{
