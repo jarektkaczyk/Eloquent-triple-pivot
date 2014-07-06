@@ -57,6 +57,10 @@ Usage
 		...
 	}
 	
+	
+	// -------------------------------------
+	// USAGE
+	
 	$user = User::with('tags')->first();
 	
 	// like ordinary belongsToMany:
