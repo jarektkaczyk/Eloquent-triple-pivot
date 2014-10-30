@@ -1,5 +1,5 @@
 {
-    "name": "jarektkaczyk/triple-pivot",
+    "name": "jarektkaczyk/eloquent-triple-pivot",
     "description": "Many-to-many relations between 3 models",
     "authors": [
         {
