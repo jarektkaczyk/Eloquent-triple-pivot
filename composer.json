@@ -1,6 +1,7 @@
 {
     "name": "jarektkaczyk/eloquent-triple-pivot",
     "description": "Many-to-many relations between 3 models",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jarek Tkaczyk",
