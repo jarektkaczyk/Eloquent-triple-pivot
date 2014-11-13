@@ -118,7 +118,7 @@ A way to link 3 many-to-many relations together in Laravel 4's Eloquent.
 	"require": {
         "laravel/framework": "4.2.*",
         ...
-        "jarektkaczyk/triple-pivot": "1.0.*"
+        "jarektkaczyk/eloquent-triple-pivot": "dev-master"
     },
 
 Run `composer update -o` in the Terminal.
