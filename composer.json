@@ -10,7 +10,8 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "5.1.*"
+        "illuminate/support": "5.1.*",
+        "morrislaptop/laravel-five-package-bridges": "^1.0"
     },
     "autoload": {
         "psr-0": {
