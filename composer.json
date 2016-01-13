@@ -16,7 +16,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/morrislaptop/LaravelFivePackageBridges.git"
+            "url": "https://github.com/morrislaptop/LaravelFivePackageBridges"
         }
     ],
     "autoload": {
