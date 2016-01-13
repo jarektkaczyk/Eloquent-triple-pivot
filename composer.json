@@ -13,6 +13,12 @@
         "illuminate/support": "5.2.*",
         "morrislaptop/laravel-five-package-bridges": "^1.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/vladkucherov/LaravelFivePackageBridges.git"
+        }
+    ],
     "autoload": {
         "psr-0": {
             "Jarektkaczyk\\TriplePivot": "src/"
