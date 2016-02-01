@@ -1,5 +1,7 @@
 # Triple Pivot
 
+*This package is not maintained anymore, let me know if you wish to work on it*
+
 A way to link 3 many-to-many relations together in Laravel 4's Eloquent.
 
 ---
