@@ -11,7 +11,7 @@ A way to link 3 many-to-many relations together in Laravel 4's Eloquent.
 ### Setup
 
 1. Create 3 models: User, Tag, Track
-2. Set up your tables (users, tags, tracks, users_tags_tracks)
+2. Set up your tables: users, tags, tracks, pivot table (defaults to tag_track_user, in the example below we use custom name users_tags_tracks)
 3. Require in `composer.json` and `config/app.php`
 4. Add the trait in all 3 models
 5. Define the relation method as `->tripleBelongsToMany()`
