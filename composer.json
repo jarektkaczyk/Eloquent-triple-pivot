@@ -10,12 +10,12 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.2.*"
+        "illuminate/support": "^5.0",
+        "morrislaptop/laravel-five-package-bridges": "dev-master"
     },
     "autoload": {
         "psr-0": {
             "Jarektkaczyk\\TriplePivot": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }

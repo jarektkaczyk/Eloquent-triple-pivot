@@ -4,12 +4,16 @@ namespace Jarektkaczyk\TriplePivot;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
+use Morrislaptop\LaravelFivePackageBridges\ConfigServiceProvider;
+use Morrislaptop\LaravelFivePackageBridges\LaravelFivePackageBridgeTrait;
 
 /**
  * Class TriplePivotServiceProvider
  * @package Jarektkaczyk\TriplePivot
  */
 class TriplePivotServiceProvider extends ServiceProvider {
+	
+	use LaravelFivePackageBridgeTrait;
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -31,8 +35,10 @@ class TriplePivotServiceProvider extends ServiceProvider {
 	public function register() {
 		$this->app->booting( function () {
 			$loader = AliasLoader::getInstance();
-			$loader->alias( 'TriplePivot', 'Jarektkaczyk\TriplePivot\Facades\TriplePivot' );
+			$loader->alias( 'TriplePivot', TriplePivot::class );
 		} );
+
+		$this->app->register(ConfigServiceProvider::class);
 	}
 
 	/**
